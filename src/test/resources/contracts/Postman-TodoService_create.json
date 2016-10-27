@@ -1,0 +1,42 @@
+{
+  "provider": {
+    "name": "TodoProviderService"
+  },
+  "consumer": {
+    "name": "Postman"
+  },
+  "interactions": [
+    {
+      "description": "request to create Todo",
+      "request": {
+        "method": "POST",
+        "path": "/todos",
+        "headers": {
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "body": {
+          "action": "Make a todo app"
+        }
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "id": 1,
+          "action": "Make a todo app"
+        }
+      },
+      "providerState": "valid_credentials"
+    }
+  ],
+  "metadata": {
+    "pact-specification": {
+      "version": "2.0.0"
+    },
+    "pact-jvm": {
+      "version": "3.2.11"
+    }
+  }
+}
