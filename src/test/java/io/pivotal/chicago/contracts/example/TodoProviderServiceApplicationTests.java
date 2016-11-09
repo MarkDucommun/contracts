@@ -12,5 +12,4 @@ public class TodoProviderServiceApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
